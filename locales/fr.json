@@ -1,0 +1,189 @@
+{
+  "main": {
+    "start_message": "🌟 *Bienvenue sur PsychoTest Bot* 🌟\n\nJe suis un assistant psychologique qui vous propose plusieurs tests validés scientifiquement :\n\n🔹 *Tests de personnalité* :\n- /mbti - Test MBTI (16 personnalités)\n- /bigfive - Test des 5 grands traits (OCEAN)\n\n🔹 *Tests d'auto-évaluation* :\n- /depression - Test PHQ-9 (dépression)\n- /anxiety - Test GAD-7 (anxiété)\n\n📌 Utilisez les commandes ci-dessus ou le menu interactif pour commencer un test.\n\nℹ Pour plus d'informations : /help",
+    "help_message": "🆘 *Aide - PsychoTest Bot* 🆘\n\n*Commandes disponibles* :\n\n🔹 *Tests de personnalité* :\n- /mbti - Test de typologie MBTI (16 personnalités)\n- /bigfive - Test des 5 grands traits de personnalité (OCEAN)\n\n🔹 *Tests de santé mentale* :\n- /depression - Test PHQ-9 (évaluation des symptômes dépressifs)\n- /anxiety - Test GAD-7 (évaluation des symptômes anxieux)\n\n🔹 *Autres commandes* :\n- /start - Redémarrer le bot\n- /help - Afficher ce message\n- /cancel - Annuler un test en cours\n- /language - Changer de langue\n\n📝 *Note importante* : \nLes résultats fournis sont indicatifs et ne constituent pas un diagnostic médical. En cas de doute, consultez un professionnel de santé.\n\n💡 Conseil : Complétez plusieurs tests pour une meilleure compréhension de vous-même.",
+    "greeting": "Bonjour {user_first_name}!",
+    "select_language_prompt": "Sélectionnez votre langue :",
+    "language_updated_message": "Langue mise à jour avec succès !",
+    "buttons": {
+      "mbti": "🧠 Test MBTI",
+      "big_five": "🌊 Big Five",
+      "depression": "😔 Test Dépression",
+      "anxiety": "😰 Test Anxiété",
+      "help": "ℹ Aide",
+      "cancel_test": "❌ Annuler le test",
+      "new_test": "🔹 Faire un autre test",
+      "main_menu": "🏠 Menu principal",
+      "english": "🇬🇧 English",
+      "french": "🇫🇷 Français"
+    },
+    "question_header": "*Question {current}/{total}*",
+    "what_next": "Que souhaitez-vous faire maintenant ?",
+    "test_cancelled_prompt": "❌ Test annulé. Que souhaitez-vous faire ?",
+    "test_cancelled_command_response": "❌ Test annulé. Utilisez /start pour recommencer ou /help pour voir les options."
+  },
+  "mbti": {
+    "name": "Test MBTI",
+    "questions": [
+      {
+        "question": "En général, vous préférez:",
+        "options": ["Être entouré de gens", "Rester seul ou avec peu de gens"]
+      },
+      {
+        "question": "Quand vous apprenez quelque chose de nouveau, vous préférez:",
+        "options": ["Comprendre la théorie d'abord", "Essayer directement"]
+      },
+      {
+        "question": "Lorsque vous prenez une décision, vous comptez surtout sur:",
+        "options": ["Vos sentiments et valeurs", "La logique et l'objectivité"]
+      },
+      {
+        "question": "Dans votre vie quotidienne, vous préférez:",
+        "options": ["Planifier à l'avance", "Improviser au fur et à mesure"]
+      }
+    ],
+    "results": {
+      "INTJ": "L'Architecte - Stratège créatif et original.",
+      "INTP": "Le Logicien - Innovateur théorique assoiffé de connaissances.",
+      "ENTJ": "Le Commandant - Leader charismatique et visionnaire.",
+      "ENTP": "L'Innovateur - Inventeur curieux et astucieux."
+    },
+    "result_format": "Votre type MBTI est: {type_str}\n\n{description}",
+    "default_description": "Description non disponible pour ce type.",
+    "summary": "Le MBTI est un indicateur de personnalité qui catégorise les individus en 16 types."
+  },
+  "big_five": {
+    "name": "Test des 5 Grands Traits (OCEAN)",
+    "questions": [
+      {
+        "question": "Je suis quelqu'un qui parle facilement aux autres.",
+        "options": ["Fortement en désaccord", "En désaccord", "Neutre", "D'accord", "Fortement d'accord"]
+      },
+      {
+        "question": "Je suis quelqu'un qui a tendance à critiquer les autres.",
+        "options": ["Fortement en désaccord", "En désaccord", "Neutre", "D'accord", "Fortement d'accord"]
+      },
+      {
+        "question": "Je fais mon travail de manière méthodique.",
+        "options": ["Fortement en désaccord", "En désaccord", "Neutre", "D'accord", "Fortement d'accord"]
+      },
+      {
+        "question": "Je suis souvent stressé(e) ou anxieux(se).",
+        "options": ["Fortement en désaccord", "En désaccord", "Neutre", "D'accord", "Fortement d'accord"]
+      },
+      {
+        "question": "J'ai une imagination active.",
+        "options": ["Fortement en désaccord", "En désaccord", "Neutre", "D'accord", "Fortement d'accord"]
+      }
+    ],
+    "result_title": "📊 Résultats du Test Big Five (OCEAN):",
+    "trait_format": "{trait}: {score}/20",
+    "traits": {
+        "Extraversion": "Extraversion",
+        "Agréabilité": "Agréabilité",
+        "Conscience": "Conscience",
+        "Névrosisme": "Névrosisme",
+        "Ouverture": "Ouverture"
+    },
+    "interpretation_title": "Interprétation:",
+    "interpretations": {
+      "Extraversion": "Extraversion: Sociabilité et énergie",
+      "Agréabilité": "Agréabilité: Compassion et coopération",
+      "Conscience": "Conscience: Auto-discipline et organisation",
+      "Névrosisme": "Névrosisme: Tendance à éprouver des émotions négatives",
+      "Ouverture": "Ouverture: Appréciation pour l'art, l'aventure, les idées"
+    },
+    "summary": "Ces résultats sont indicatifs et ne constituent pas un diagnostic."
+  },
+  "depression": {
+    "name": "Test PHQ-9 (Dépression)",
+    "questions": [
+      {
+        "question": "Peu d'intérêt ou de plaisir à faire les choses",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Sentiment de tristesse, dépression ou désespoir",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Problèmes de sommeil (difficulté à dormir, sommeil agité ou excessif)",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Sensation de fatigue ou manque d'énergie",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Perte d'appétit ou excès alimentaire",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Sentiment d'échec ou déception envers soi-même",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Difficulté à se concentrer (lecture, télévision, etc.)",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Mouvements ou parole si lents que les autres pourraient le remarquer, ou au contraire agitation",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Pensées que vous seriez mieux mort ou de vous faire du mal d'une certaine manière",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      }
+    ],
+    "result_format": "Votre score PHQ-9 est: {score}/27\n\n{interpretation}",
+    "interpretations": {
+      "no_depression": "Pas de dépression significative.",
+      "mild_depression": "Symptômes dépressifs légers.",
+      "moderate_depression": "Symptômes dépressifs modérés.",
+      "moderately_severe_depression": "Symptômes dépressifs modérément sévères.",
+      "severe_depression": "Symptômes dépressifs sévères."
+    },
+    "summary": "Ce test (PHQ-9) est un outil de dépistage et ne remplace pas un diagnostic professionnel. Si vos résultats suggèrent une possible dépression, veuillez consulter un professionnel de santé."
+  },
+  "anxiety": {
+    "name": "Test GAD-7 (Anxiété)",
+    "questions": [
+      {
+        "question": "Sentiment de nervosité, d'anxiété ou de tension",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Incapacité àarrêter ou à contrôler les inquiétudes",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Inquiétude excessive à propos de différentes choses",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Difficulté à se détendre",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Agitation si intense qu'il est difficile de rester assis tranquillement",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Devenir facilement agacé ou irritable",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      },
+      {
+        "question": "Sentiment de peur comme si quelque chose de terrible allait arriver",
+        "options": ["Pas du tout", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"]
+      }
+    ],
+    "result_format": "Votre score GAD-7 est: {score}/21\n\n{interpretation}",
+    "interpretations": {
+      "no_anxiety": "Pas d'anxiété significative.",
+      "mild_anxiety": "Anxiété légère.",
+      "moderate_anxiety": "Anxiété modérée.",
+      "severe_anxiety": "Anxiété sévère."
+    },
+    "summary": "Ce test (GAD-7) est un outil de dépistage et ne remplace pas un diagnostic professionnel. Si vos résultats suggèrent une possible anxiété, veuillez consulter un professionnel de santé."
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "main": {
+    "start_message": "🌟 *Welcome to PsychoTest Bot* 🌟\n\nI am a psychological assistant offering several scientifically validated tests:\n\n🔹 *Personality Tests*:\n- /mbti - MBTI Test (16 personalities)\n- /bigfive - Big Five Traits Test (OCEAN)\n\n🔹 *Self-Assessment Tests*:\n- /depression - PHQ-9 Test (depression)\n- /anxiety - GAD-7 Test (anxiety)\n\n📌 Use the commands above or the interactive menu to start a test.\n\nℹ For more information: /help",
+    "help_message": "🆘 *Help - PsychoTest Bot* 🆘\n\n*Available Commands*:\n\n🔹 *Personality Tests*:\n- /mbti - MBTI Typology Test (16 personalities)\n- /bigfive - Big Five Personality Traits Test (OCEAN)\n\n🔹 *Mental Health Tests*:\n- /depression - PHQ-9 Test (assessment of depressive symptoms)\n- /anxiety - GAD-7 Test (assessment of anxiety symptoms)\n\n🔹 *Other Commands*:\n- /start - Restart the bot\n- /help - Display this message\n- /cancel - Cancel an ongoing test\n- /language - Change language\n\n📝 *Important Note*:\nThe results provided are indicative and do not constitute a medical diagnosis. If in doubt, consult a healthcare professional.\n\n💡 Tip: Complete multiple tests for a better understanding of yourself.",
+    "greeting": "Hello {user_first_name}!",
+    "select_language_prompt": "Select your language:",
+    "language_updated_message": "Language updated successfully!",
+    "buttons": {
+      "mbti": "🧠 MBTI Test",
+      "big_five": "🌊 Big Five",
+      "depression": "😔 Depression Test",
+      "anxiety": "😰 Anxiety Test",
+      "help": "ℹ Help",
+      "cancel_test": "❌ Cancel Test",
+      "new_test": "🔹 Take Another Test",
+      "main_menu": "🏠 Main Menu",
+      "english": "🇬🇧 English",
+      "french": "🇫🇷 French"
+    },
+    "question_header": "*Question {current}/{total}*",
+    "what_next": "What would you like to do now?",
+    "test_cancelled_prompt": "❌ Test cancelled. What would you like to do?",
+    "test_cancelled_command_response": "❌ Test cancelled. Use /start to begin again or /help to see options."
+  },
+  "mbti": {
+    "name": "MBTI Test",
+    "questions": [
+      {
+        "question": "Generally, you prefer:",
+        "options": ["Being surrounded by people", "Being alone or with a few people"]
+      },
+      {
+        "question": "When you learn something new, you prefer:",
+        "options": ["Understanding the theory first", "Trying it out directly"]
+      },
+      {
+        "question": "When making a decision, you primarily rely on:",
+        "options": ["Your feelings and values", "Logic and objectivity"]
+      },
+      {
+        "question": "In your daily life, you prefer to:",
+        "options": ["Plan ahead", "Improvise as you go"]
+      }
+    ],
+    "results": {
+      "INTJ": "The Architect - Creative and original strategist.",
+      "INTP": "The Logician - Theoretical innovator hungry for knowledge.",
+      "ENTJ": "The Commander - Charismatic and visionary leader.",
+      "ENTP": "The Innovator - Curious and clever inventor."
+    },
+    "result_format": "Your MBTI type is: {type_str}\n\n{description}",
+    "default_description": "Description not available for this type.",
+    "summary": "The MBTI is a personality indicator that categorizes individuals into 16 types."
+  },
+  "big_five": {
+    "name": "Big Five Traits Test (OCEAN)",
+    "questions": [
+      {
+        "question": "I am someone who talks easily to others.",
+        "options": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"]
+      },
+      {
+        "question": "I am someone who tends to criticize others.",
+        "options": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"]
+      },
+      {
+        "question": "I do my work methodically.",
+        "options": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"]
+      },
+      {
+        "question": "I am often stressed or anxious.",
+        "options": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"]
+      },
+      {
+        "question": "I have an active imagination.",
+        "options": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"]
+      }
+    ],
+    "result_title": "📊 Big Five Test Results (OCEAN):",
+    "trait_format": "{trait}: {score}/20",
+    "traits": {
+        "Extraversion": "Extraversion",
+        "Agréabilité": "Agreeableness",
+        "Conscience": "Conscientiousness",
+        "Névrosisme": "Neuroticism",
+        "Ouverture": "Openness"
+    },
+    "interpretation_title": "Interpretation:",
+    "interpretations": {
+      "Extraversion": "Extraversion: Sociability and energy",
+      "Agreeableness": "Agreeableness: Compassion and cooperation",
+      "Conscientiousness": "Conscientiousness: Self-discipline and organization",
+      "Neuroticism": "Neuroticism: Tendency to experience negative emotions",
+      "Openness": "Openness: Appreciation for art, adventure, ideas"
+    },
+    "summary": "These results are indicative and do not constitute a diagnosis."
+  },
+  "depression": {
+    "name": "PHQ-9 Test (Depression)",
+    "questions": [
+      {
+        "question": "Little interest or pleasure in doing things",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Feeling down, depressed, or hopeless",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Trouble falling or staying asleep, or sleeping too much",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Feeling tired or having little energy",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Poor appetite or overeating",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Trouble concentrating on things, such as reading the newspaper or watching television",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Thoughts that you would be better off dead, or of hurting yourself in some way",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      }
+    ],
+    "result_format": "Your PHQ-9 score is: {score}/27\n\n{interpretation}",
+    "interpretations": {
+      "no_depression": "No significant depression.",
+      "mild_depression": "Mild depressive symptoms.",
+      "moderate_depression": "Moderate depressive symptoms.",
+      "moderately_severe_depression": "Moderately severe depressive symptoms.",
+      "severe_depression": "Severe depressive symptoms."
+    },
+    "summary": "This test (PHQ-9) is a screening tool and does not replace a professional diagnosis. If your results suggest possible depression, please consult a healthcare professional."
+  },
+  "anxiety": {
+    "name": "GAD-7 Test (Anxiety)",
+    "questions": [
+      {
+        "question": "Feeling nervous, anxious, or on edge",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Not being able to stop or control worrying",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Worrying too much about different things",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Trouble relaxing",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Being so restless that it is hard to sit still",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Becoming easily annoyed or irritable",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      },
+      {
+        "question": "Feeling afraid as if something awful might happen",
+        "options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+      }
+    ],
+    "result_format": "Your GAD-7 score is: {score}/21\n\n{interpretation}",
+    "interpretations": {
+      "no_anxiety": "No significant anxiety.",
+      "mild_anxiety": "Mild anxiety.",
+      "moderate_anxiety": "Moderate anxiety.",
+      "severe_anxiety": "Severe anxiety."
+    },
+    "summary": "This test (GAD-7) is a screening tool and does not replace a professional diagnosis. If your results suggest possible anxiety, please consult a healthcare professional."
+  }
+}
