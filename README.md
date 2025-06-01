@@ -76,4 +76,4 @@ The psychological tests provided by this bot are for informational and education
 
 ## License
 
-This project is licensed under the GPL0.3. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL-0.3. See the [LICENSE](LICENSE) file for details.
