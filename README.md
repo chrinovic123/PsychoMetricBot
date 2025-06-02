@@ -1,4 +1,10 @@
-# PsychoTest Bot
+<p align="center">
+  <h1 align="center">PsychoTest Bot</h1>
+</p>
+<p align="center">
+  <a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"></a>
+  <img src="https://img.shields.io/badge/python-3.9%2B-blue.svg" alt="Python 3.9+">
+</p>
 
 PsychoTest Bot is a Telegram bot that provides users with access to various psychological assessments.
 
@@ -14,6 +20,9 @@ The bot currently offers the following assessments:
 ## How to Use
 
 You can interact with PsychoTest Bot using commands or by clicking the inline keyboard buttons presented by the bot.
+
+A short GIF or video demonstrating the bot in action would be a great addition here!
+<!-- TODO: Add a GIF or video demonstrating the bot in action -->
 
 ### Commands
 
@@ -69,6 +78,34 @@ python main.py
 ```
 
 The bot will start polling for updates from Telegram.
+
+## Technology Stack
+
+This project is built using the following technologies:
+
+*   **Python:** The core programming language.
+*   **python-telegram-bot:** A library for interacting with the Telegram Bot API.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or want to contribute code, please follow these steps:
+
+### Reporting Bugs
+
+*   Ensure the bug was not already reported by searching on GitHub under Issues.
+*   If you're unable to find an open issue addressing the problem, open a new one. Be sure to include a title and clear description, as much relevant information as possible, and a code sample or an executable test case demonstrating the expected behavior that is not occurring.
+
+### Suggesting Enhancements
+
+*   Open an issue with the label `enhancement`.
+*   Clearly describe the enhancement and the motivation for it.
+
+### Pull Request Process
+
+1.  Fork the repo and create your branch from `main` (or the default branch).
+2.  Add tests for your changes.
+3.  Ensure your code lints.
+4.  Issue that pull request!
 
 ## Disclaimer
 
